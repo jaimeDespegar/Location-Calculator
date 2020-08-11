@@ -1,4 +1,4 @@
-package implementation;
+package impl;
 
 import model.Coordinate;
 import model.LocationConnector;
