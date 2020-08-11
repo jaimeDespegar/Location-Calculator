@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println();
 
-        l.getData(new Coordinate(2, 1), new Coordinate(4, 5))
+        l.getData(new Coordinate(4, 3), new Coordinate(2, 1))
                 .forEach(i -> System.out.println(i.getX()+" - "+i.getY()));
     }
 
