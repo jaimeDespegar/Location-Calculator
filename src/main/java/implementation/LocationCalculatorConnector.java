@@ -1,8 +1,8 @@
-package location.calculator.impl;
+package implementation;
 
-import com.google.common.collect.Lists;
 import model.Coordinate;
 import model.LocationConnector;
+import java.util.ArrayList;
 import java.util.List;
 
 public class LocationCalculatorConnector implements LocationConnector {
@@ -29,7 +29,7 @@ public class LocationCalculatorConnector implements LocationConnector {
         Double departureX = departure.getX();
         Double departureY = departure.getY();
 
-        List<Coordinate> road = Lists.newArrayList();
+        List<Coordinate> road = new ArrayList<>();
         if(arrivalX < departureX) {
             for (int i = arrivalX.intValue(); i <= departureX; i++) {
                 road.add(new Coordinate(i, arrivalY.intValue()));
