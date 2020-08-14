@@ -9,6 +9,7 @@ public class CalculatorViewPanel implements PanelConfiguration {
     private JTextField txtUser;
     private JTextField txtPassword;
     private JButton btnIngresar;
+    private JLabel lblUserName;
 
     @Override
     public JPanel buildPanel(View mainView) {
@@ -23,6 +24,10 @@ public class CalculatorViewPanel implements PanelConfiguration {
         JLabel lblTelfono = new JLabel("Password");
         lblTelfono.setBounds(10, 52, 113, 14);
         panel.add(lblTelfono);
+
+        lblUserName = new JLabel("");
+        lblUserName.setBounds(230, 26, 213, 14);
+        mainView.getMainPanel().add(lblUserName);
 
         txtUser = new JTextField();
         txtUser.setBounds(133, 8, 164, 20);
@@ -43,9 +48,7 @@ public class CalculatorViewPanel implements PanelConfiguration {
     }
 
     private void paintScreen(View mainView) {
-        JLabel lblTelfono = new JLabel("My user is Jaime!");
-        lblTelfono.setBounds(15, 82, 213, 14);
-        mainView.getMainPanel().add(lblTelfono);
+        ((JLabel) mainView.getMainPanel().getComponentAt(230,26)).setText("¡Hola usuario " + this.txtUser.getText() + "!");
         mainView.repaint();
         mainView.closeViewConfiguration();
     }
