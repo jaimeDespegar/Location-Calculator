@@ -17,7 +17,7 @@ public class LoginViewConfiguration extends JFrame implements PanelConfiguration
 		super();
 
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(800, 180, 343, 183);
+		setBounds(800, 380, 343, 183);
 		this.contentPane = new JPanel();
 		this.contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		this.setContentPane(this.contentPane);

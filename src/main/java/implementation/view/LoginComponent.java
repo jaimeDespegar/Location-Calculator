@@ -13,8 +13,8 @@ public class LoginComponent implements MyViewComponent {
     @Override
     public List<JComponent> getComponents(View context) {
         List<JComponent> components = new ArrayList<>();
-        JButton button = new JButton("Loggin Settings");
-        button.setBounds(325, 53, 120, 23);
+        JButton button = new JButton("Settings");
+        button.setBounds(325, 53, 100, 23);
         button.addActionListener(i -> this.init(context));
         components.add(button);
         return components;
