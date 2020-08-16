@@ -5,7 +5,7 @@ import views.View;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
-public class ViewConfiguration extends JFrame implements PanelConfiguration {
+public class LoginViewConfiguration extends JFrame implements PanelConfiguration {
 
 	private JPanel contentPane;
 	private JTextField txtUser;
@@ -13,7 +13,7 @@ public class ViewConfiguration extends JFrame implements PanelConfiguration {
 	private JButton btnIngresar;
 	private JLabel lblUserName;
 
-	public ViewConfiguration(View mainView) {
+	public LoginViewConfiguration(View mainView) {
 		super();
 
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

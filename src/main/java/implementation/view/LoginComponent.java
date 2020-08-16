@@ -1,6 +1,5 @@
-package implementation.view.login;
+package implementation.view;
 
-import implementation.view.ViewConfiguration;
 import views.MyViewComponent;
 import views.View;
 import javax.swing.*;
@@ -9,7 +8,7 @@ import java.util.List;
 
 public class LoginComponent implements MyViewComponent {
 
-    private ViewConfiguration viewConfiguration;
+    private LoginViewConfiguration loginViewConfiguration;
 
     @Override
     public List<JComponent> getComponents(View context) {
@@ -22,7 +21,7 @@ public class LoginComponent implements MyViewComponent {
     }
 
     private void init(View context) {
-        this.viewConfiguration = new ViewConfiguration(context);
+        this.loginViewConfiguration = new LoginViewConfiguration(context);
     }
 
 }
