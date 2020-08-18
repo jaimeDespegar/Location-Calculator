@@ -1,11 +1,11 @@
 package implementation;
 
 import model.Coordinate;
-import model.LocationConnector;
+import model.Location;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LocationCalculatorConnector implements LocationConnector {
+public class LocationCalculator implements Location {
 
     @Override
     public Boolean isAvailable() {
